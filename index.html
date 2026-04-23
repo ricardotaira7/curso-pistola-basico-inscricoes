@@ -17,7 +17,7 @@
   --r:6px;
 }
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-size:15px;line-height:1.7;}
+body{background:var(--bg);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-size:18px;line-height:1.7;}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");opacity:.02;pointer-events:none;z-index:0;}
 
 #bg{position:fixed;inset:0;z-index:0;pointer-events:none;}
@@ -25,23 +25,23 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 main{position:relative;z-index:1;max-width:680px;margin:0 auto;}
 
 /* ── TOP BAR ── */
-.top-bar{background:var(--gold);color:var(--bg);text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:5px 12px;position:relative;z-index:10;}
+.top-bar{background:var(--gold);color:var(--bg);text-align:center;font-family:'Barlow Condensed',sans-serif;font-size:.95rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:10px 16px;position:relative;z-index:10;}
 
 /* ── HERO ── */
-.hero{padding:48px 20px 36px;text-align:center;position:relative;}
-.hero-badge{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--gold-dk);color:var(--gold);font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:4px 12px;margin-bottom:16px;animation:fadeUp .8s ease both;}
+.hero{padding:56px 20px 40px;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--gold-dk);color:var(--gold);font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:4px 12px;margin-bottom:16px;animation:fadeUp .8s ease both;}
 .hero-badge::before{content:'';width:6px;height:6px;background:var(--gold);border-radius:50%;animation:blink 2s ease infinite;}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-.hero-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.28em;color:var(--gray);text-transform:uppercase;margin-bottom:6px;animation:fadeUp .8s ease .05s both;}
-.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,12vw,5rem);line-height:.92;letter-spacing:.03em;margin-bottom:4px;animation:fadeUp .8s ease .1s both;}
-.hero-title span{display:block;color:var(--gold);font-size:clamp(1.6rem,7vw,2.6rem);}
+.hero-eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:600;letter-spacing:.3em;color:var(--gray);text-transform:uppercase;margin-bottom:6px;animation:fadeUp .8s ease .05s both;}
+.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(5rem,20vw,8rem);line-height:.92;letter-spacing:.03em;margin-bottom:4px;animation:fadeUp .8s ease .1s both;}
+.hero-title span{display:block;color:var(--gold);font-size:clamp(2.8rem,11vw,4.5rem);}
 .hero-div{width:50px;height:2px;background:linear-gradient(90deg,var(--gold-dk),var(--gold),var(--gold-dk));margin:14px auto;animation:fadeUp .8s ease .15s both;}
 .hero-desc{font-size:.9rem;line-height:1.7;color:var(--gray-lt);max-width:360px;margin:0 auto 18px;animation:fadeUp .8s ease .2s both;}
 
 /* ── PILLS ── */
 .pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:24px;animation:fadeUp .8s ease .25s both;}
-.pill{display:flex;align-items:center;gap:5px;background:var(--bg3);border:1px solid var(--line);border-radius:50px;padding:5px 12px;font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.05em;color:var(--gold);}
+.pill{display:flex;align-items:center;gap:5px;background:var(--bg3);border:1px solid var(--line);border-radius:50px;padding:7px 14px;font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:600;letter-spacing:.06em;color:var(--gold);}
 
 /* ── CTA BUTTON ── */
 .cta-wrap{max-width:360px;margin:0 auto;animation:fadeUp .8s ease .3s both;}
@@ -55,16 +55,16 @@ main{position:relative;z-index:1;max-width:680px;margin:0 auto;}
 /* ── SECTION ── */
 section{padding:48px 20px;border-top:1px solid var(--line);}
 .s-label{font-family:'Barlow Condensed',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.28em;color:var(--gold);text-transform:uppercase;margin-bottom:6px;}
-.s-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2rem,8vw,2.8rem);line-height:1;letter-spacing:.04em;margin-bottom:18px;}
+.s-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,10vw,3.5rem);line-height:1;letter-spacing:.04em;margin-bottom:18px;}
 .sep{width:40px;height:2px;background:var(--gold);margin-bottom:20px;}
-.txt{font-size:.9rem;line-height:1.75;color:var(--gray-lt);margin-bottom:14px;}
+.txt{font-size:1.12rem;line-height:1.85;color:var(--gray-lt);margin-bottom:14px;}
 .txt strong{color:var(--white);font-weight:600;}
 
 /* ── GRADE ── */
 .grade-wrap{background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:20px;}
 .grade-head{background:var(--gold);padding:11px 16px;font-family:'Bebas Neue',sans-serif;font-size:1rem;letter-spacing:.08em;color:var(--bg);display:flex;align-items:center;gap:8px;}
 .grade-list{list-style:none;}
-.grade-item{display:flex;align-items:center;gap:12px;padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.04);font-size:.86rem;color:var(--gray-lt);}
+.grade-item{display:flex;align-items:center;gap:12px;padding:11px 16px;border-bottom:1px solid rgba(255,255,255,.04);font-size:1.12rem;color:var(--gray-lt);}
 .grade-item:last-child{border:none;}
 .grade-num{flex-shrink:0;width:22px;height:22px;background:var(--gold-dk);color:var(--gold-lt);font-family:'Bebas Neue',sans-serif;font-size:.72rem;border-radius:3px;display:flex;align-items:center;justify-content:center;}
 
@@ -114,22 +114,22 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
 
 /* ── PREÇO ── */
 .price-section{padding:56px 20px;border-top:1px solid var(--line);text-align:center;background:linear-gradient(180deg,var(--bg),#0d0900,var(--bg));}
-.price-card{background:var(--bg3);border:2px solid var(--gold-dk);border-radius:12px;padding:32px 20px;max-width:420px;margin:0 auto;position:relative;overflow:hidden;}
+.price-card{background:var(--bg3);border:2px solid var(--gold-dk);border-radius:12px;padding:40px 24px;max-width:420px;margin:0 auto;position:relative;overflow:hidden;}
 .price-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold-dk),var(--gold),var(--gold-dk));}
-.price-timer{display:inline-flex;align-items:center;gap:8px;background:rgba(178,34,34,.15);border:1px solid rgba(178,34,34,.35);border-radius:50px;padding:8px 20px;font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.1em;color:#ef5350;text-transform:uppercase;margin-bottom:20px;animation:pulse 1.5s ease infinite;}
+.price-timer{display:inline-flex;align-items:center;gap:8px;background:rgba(178,34,34,.15);border:1px solid rgba(178,34,34,.35);border-radius:50px;padding:10px 24px;font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:.1em;color:#ef5350;text-transform:uppercase;margin-bottom:20px;animation:pulse 1.5s ease infinite;}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.7}}
 .price-timer .timer-dot{width:8px;height:8px;background:#ef5350;border-radius:50%;animation:blink 1s ease infinite;}
-.price-old{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;color:var(--gray);letter-spacing:.05em;margin-bottom:8px;position:relative;display:block;text-align:center;}.price-old span{position:relative;display:inline-block;}.price-old span::after{content:'';position:absolute;left:-4px;right:-4px;top:52%;height:1px;background:var(--gray);}
-.price-label{font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:6px;}
-.price-new{font-family:'Bebas Neue',sans-serif;font-size:clamp(4.5rem,18vw,6.5rem);color:var(--gold);line-height:.85;margin-bottom:6px;text-shadow:0 0 40px rgba(201,168,76,.2);}
+.price-old{font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;color:var(--gray);letter-spacing:.05em;margin-bottom:8px;position:relative;display:block;text-align:center;}.price-old span{position:relative;display:inline-block;}.price-old span::after{content:'';position:absolute;left:-4px;right:-4px;top:52%;height:1px;background:var(--gray);}
+.price-label{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:6px;}
+.price-new{font-family:'Bebas Neue',sans-serif;font-size:clamp(5.5rem,22vw,8rem);color:var(--gold);line-height:.85;margin-bottom:6px;text-shadow:0 0 40px rgba(201,168,76,.2);}
 .price-new small{font-size:.35em;color:var(--gray-lt);letter-spacing:.05em;}
-.price-save{display:inline-block;background:rgba(46,125,50,.12);border:1px solid rgba(46,125,50,.3);border-radius:50px;padding:6px 18px;font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:700;color:#66bb6a;letter-spacing:.08em;margin-bottom:24px;}
+.price-save{display:inline-block;background:rgba(46,125,50,.12);border:1px solid rgba(46,125,50,.3);border-radius:50px;padding:8px 22px;font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;color:#66bb6a;letter-spacing:.08em;margin-bottom:24px;}
 .price-cta{max-width:380px;margin:0 auto;}
 
 
 /* ── FAQ ── */
 .faq-item{background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);margin-bottom:8px;overflow:hidden;}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;cursor:pointer;-webkit-tap-highlight-color:transparent;font-family:'Barlow Condensed',sans-serif;font-size:.88rem;font-weight:600;color:var(--white);letter-spacing:.03em;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;cursor:pointer;-webkit-tap-highlight-color:transparent;font-family:'Barlow Condensed',sans-serif;font-size:1.08rem;font-weight:600;color:var(--white);letter-spacing:.03em;}
 .faq-q span{color:var(--gold);font-size:.9rem;transition:transform .3s;flex-shrink:0;margin-left:10px;}
 .faq-item.open .faq-q span{transform:rotate(180deg);}
 .faq-a{display:none;padding:0 16px 14px;font-size:.84rem;color:var(--gray-lt);line-height:1.65;}
@@ -158,8 +158,8 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
 /* ── FINAL CTA ── */
 .final-cta{padding:48px 20px;border-top:1px solid var(--line);text-align:center;background:linear-gradient(180deg,var(--bg),#0d0a00);}
 .final-cta .s-title{margin-bottom:8px;}
-.final-cta .fc-sub{font-size:.88rem;color:var(--gray-lt);margin-bottom:20px;line-height:1.6;}
-.final-cta .fc-price{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--gold);margin-bottom:16px;}
+.final-cta .fc-sub{font-size:1.05rem;color:var(--gray-lt);margin-bottom:20px;line-height:1.6;}
+.final-cta .fc-price{font-family:'Bebas Neue',sans-serif;font-size:3.5rem;color:var(--gold);margin-bottom:16px;}
 .final-cta .fc-price small{font-size:.5em;color:var(--gray);}
 
 /* ── FOOTER ── */
@@ -196,7 +196,7 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
   <p class="hero-desc">Seu primeiro contato com a pistola. Aprenda do zero com turmas de no <strong>máximo 6 alunos</strong> — acompanhamento individual dos instrutores do início ao fim.</p>
 
   <div style="background:rgba(178,34,34,.1);border:1px solid rgba(178,34,34,.3);border-radius:var(--r);padding:10px 14px;margin-bottom:16px;max-width:360px;margin-left:auto;margin-right:auto;text-align:center;">
-    <p style="font-size:.82rem;color:#ef5350;margin:0;font-weight:600;">🔞 EXCLUSIVO PARA MAIORES DE 18 ANOS<br><span style="font-weight:400;font-size:.76rem;color:#e57373;">Documento de identidade obrigatório no dia do curso.</span></p>
+    <p style="font-size:1rem;color:#ef5350;margin:0;font-weight:700;">🔞 EXCLUSIVO PARA MAIORES DE 18 ANOS<br><span style="font-weight:400;font-size:.9rem;color:#e57373;">Documento de identidade obrigatório no dia do curso.</span></p>
   </div>
 
   <div class="pills">
