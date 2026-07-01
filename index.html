@@ -81,7 +81,9 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
 .tiro-card .tc-num{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--gold);line-height:1;}
 .tiro-card .tc-cal{font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:var(--white);letter-spacing:.08em;margin:2px 0;}
 .tiro-card .tc-desc{font-size:.88rem;color:var(--gray);line-height:1.3;}
-.tiro-card.bonus{border-color:var(--gold-dk);background:linear-gradient(135deg,var(--bg3),#1a1500);}
+.tiro-card.bonus{border-color:var(--gold);background:linear-gradient(135deg,var(--bg3),#231a00);position:relative;overflow:hidden;}
+.tiro-card.bonus::before{content:'EXCLUSIVO';position:absolute;top:6px;right:-22px;background:var(--gold);color:var(--bg);font-family:'Barlow Condensed',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.1em;padding:2px 24px;transform:rotate(45deg);}
+.tiro-card .tc-gift{font-size:2.2rem;line-height:1;margin-bottom:2px;animation:pulse 1.5s ease infinite;}
 
 /* ── INSTRUTORES ── */
 .inst-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
@@ -193,7 +195,7 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
   <p class="hero-eyebrow">Curso de Formação</p>
   <h1 class="hero-title">Operador<br>de Pistola<span>Básico</span></h1>
   <div class="hero-div"></div>
-  <p class="hero-desc">Seu primeiro contato com a pistola. Aprenda do zero com turmas de no <strong>máximo 6 alunos</strong> — acompanhamento individual dos instrutores do início ao fim.</p>
+  <p class="hero-desc">Seu primeiro contato com a pistola. Aprenda do zero com turmas com <strong>vagas limitadas</strong> — acompanhamento individual dos instrutores do início ao fim.</p>
 
   <div style="background:rgba(178,34,34,.1);border:1px solid rgba(178,34,34,.3);border-radius:var(--r);padding:10px 14px;margin-bottom:16px;max-width:360px;margin-left:auto;margin-right:auto;text-align:center;">
     <p style="font-size:1rem;color:#ef5350;margin:0;font-weight:700;">🔞 EXCLUSIVO PARA MAIORES DE 18 ANOS<br><span style="font-weight:400;font-size:.9rem;color:#e57373;">Documento de identidade obrigatório no dia do curso.</span></p>
@@ -204,8 +206,8 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
     <div class="pill">📋 15 módulos</div>
     <div class="pill">🎯 Teoria + Prática</div>
     <div class="pill">📜 Certificado Incluso</div>
-    <div class="pill">🔫 55 disparos</div>
-    <div class="pill">👥 Máx. 6 alunos</div>
+    <div class="pill">🔫 50 disparos</div>
+    <div class="pill">👥 Vagas Limitadas</div>
     <div class="pill" style="border-color:rgba(178,34,34,.4);color:#ef5350;">🔞 Maiores de 18 anos</div>
   </div>
 
@@ -216,7 +218,7 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
     </a>
     <a href="https://wa.me/5561993749508?text=Olá%20Flávio!%20Tenho%20interesse%20no%20Curso%20Operador%20de%20Pistola%20Básico." class="btn-cta" target="_blank" style="margin-top:8px;">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Flávio Barreto
+      Flávio Barretto
     </a>
     <a href="#grade" class="btn-sec" style="margin-top:10px;">📋 Ver grade curricular</a>
   </div>
@@ -228,7 +230,7 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
   <h2 class="s-title">O que você vai aprender</h2>
   <div class="sep"></div>
   <p class="txt">O curso foi feito para quem <strong>nunca manuseou uma arma de fogo</strong>, mas também para quem já tem alguma experiência e quer aprender mais sobre fundamentos, técnica e segurança. Você vai aprender do zero: como funciona, como segurar, como mirar e como atirar — tudo com segurança e acompanhamento direto dos instrutores.</p>
-  <p class="txt">O curso é <strong>100% prático e presencial</strong> no estande, com <strong>55 disparos</strong> em 2 calibres: 50 tiros de 9mm + 5 tiros de cortesia no calibre 12 (espingarda). A parte teórica é enviada em <strong>material digital no ato da compra</strong>, para você estudar antes e já chegar preparado. Dúvidas são tiradas no <strong>grupo da turma</strong>, com mentoria direta dos instrutores.</p>
+  <p class="txt">O curso é <strong>100% prático e presencial</strong> no estande, com <strong>50 disparos de pistola</strong> para você treinar todos os fundamentos na prática. A parte teórica é enviada em <strong>material digital no ato da compra</strong>, para você estudar antes e já chegar preparado. Dúvidas são tiradas no <strong>grupo da turma</strong>, com mentoria direta dos instrutores.</p>
 
   <div style="background:var(--bg3);border-left:3px solid var(--gold);padding:12px 14px;border-radius:0 var(--r) var(--r) 0;margin-top:14px;">
     <p style="font-size:1.05rem;color:var(--gold-lt);margin:0;">🎯 <strong>Objetivo:</strong> Capacitar o aluno nos fundamentos de segurança, manuseio e tiro com pistola semiautomática — do zero até o primeiro disparo com confiança.</p>
@@ -240,7 +242,7 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
   <div class="info-grid">
     <div class="info-card"><span class="ic-icon">⏱</span><span class="ic-val">6h</span><span class="ic-lab">Duração</span></div>
     <div class="info-card"><span class="ic-icon">📋</span><span class="ic-val">15</span><span class="ic-lab">Módulos</span></div>
-    <div class="info-card"><span class="ic-icon">🔫</span><span class="ic-val">55</span><span class="ic-lab">Disparos</span></div>
+    <div class="info-card"><span class="ic-icon">🔫</span><span class="ic-val">50</span><span class="ic-lab">Disparos</span></div>
     <div class="info-card"><span class="ic-icon">📜</span><span class="ic-val" style="font-size:1.1rem;">Certificado</span><span class="ic-lab">Incluso</span></div>
   </div>
 </section>
@@ -248,12 +250,12 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
 <!-- ══════ TIROS ══════ -->
 <section>
   <p class="s-label">Prática no Estande</p>
-  <h2 class="s-title">55 Disparos em 2 Calibres</h2>
+  <h2 class="s-title">50 Disparos em 2 Calibres</h2>
   <div class="sep"></div>
-  <p class="txt">Você vai sentir a diferença entre os calibres na prática. 50 tiros de 9mm para treinar os fundamentos + 5 tiros de cortesia no calibre 12 (espingarda) como presente nosso.</p>
+  <p class="txt">São <strong>50 disparos de pistola</strong> para você colocar em prática tudo que aprendeu — empunhadura, visada, respiração e controle do recuo, sob a supervisão direta dos instrutores.</p>
   <div class="tiros-grid">
-    <div class="tiro-card"><div class="tc-num">50</div><div class="tc-cal">9mm</div><div class="tc-desc">Calibre real de defesa. Fundamentos na prática.</div></div>
-    <div class="tiro-card bonus"><div class="tc-num">5</div><div class="tc-cal">Cal.12</div><div class="tc-desc">Espingarda! Cortesia 🎁 Presente nosso.</div></div>
+    <div class="tiro-card"><div class="tc-num">50</div><div class="tc-cal">Disparos</div><div class="tc-desc">50 disparos de pistola para treinar todos os fundamentos na prática.</div></div>
+    <div class="tiro-card bonus"><div class="tc-gift">🎁</div><div class="tc-cal" style="color:var(--gold-lt);">Brinde Surpresa</div><div class="tc-desc">Uma <strong style="color:var(--gold-lt);">experiência exclusiva</strong> te espera no dia do curso — algo que poucos cursos oferecem. 🤫 É segredo! Garanta sua vaga e descubra pessoalmente.</div></div>
   </div>
 </section>
 
@@ -265,23 +267,22 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
   <div class="grade-wrap">
     <div class="grade-head">📚 Operador de Pistola Básico — 6 horas · 15 módulos</div>
     <ul class="grade-list">
-      <li class="grade-item"><span class="grade-num">01</span><div><strong>10 Regras de Segurança</strong><br><span style="font-size:.92rem;color:var(--gray);">As regras que protegem você e quem está ao seu lado no estande.</span></div></li>
-      <li class="grade-item"><span class="grade-num">02</span><div><strong>Conduta na Pista de Tiro</strong><br><span style="font-size:.92rem;color:var(--gray);">Comandos do instrutor, EPIs e como se comportar na pista.</span></div></li>
+      <li class="grade-item"><span class="grade-num">01</span><div><strong>10 Regras de Segurança</strong><br><span style="font-size:.92rem;color:var(--gray);">As regras do estande e segurança que protegem você e quem está ao seu lado.</span></div></li>
+      <li class="grade-item"><span class="grade-num">02</span><div><strong>Partes da Pistola</strong><br><span style="font-size:.92rem;color:var(--gray);">Conheça cada peça da arma que você vai usar no curso.</span></div></li>
       <li class="grade-item"><span class="grade-num">03</span><div><strong>Manuseio Seguro da Arma</strong><br><span style="font-size:.92rem;color:var(--gray);">Como pegar, inspecionar, carregar, descarregar e passar uma arma com segurança.</span></div></li>
-      <li class="grade-item"><span class="grade-num">04</span><div><strong>Partes da Pistola</strong><br><span style="font-size:.92rem;color:var(--gray);">Conheça cada peça da arma que você vai usar no curso.</span></div></li>
-      <li class="grade-item"><span class="grade-num">05</span><div><strong>Como a Pistola Funciona</strong><br><span style="font-size:.92rem;color:var(--gray);">O ciclo completo do disparo e os tipos de ação do gatilho.</span></div></li>
-      <li class="grade-item"><span class="grade-num">06</span><div><strong>Tipos de Munição</strong><br><span style="font-size:.92rem;color:var(--gray);">As partes do cartucho e os tipos de projétil mais comuns.</span></div></li>
-      <li class="grade-item"><span class="grade-num">07</span><div><strong>🎯 Bases e Posições de Tiro</strong><br><span style="font-size:.92rem;color:var(--gray);">As 3 posições principais: Isósceles, Weaver e CAR.</span></div></li>
+      <li class="grade-item"><span class="grade-num">04</span><div><strong>Como a Pistola Funciona</strong><br><span style="font-size:.92rem;color:var(--gray);">O ciclo completo do disparo e os tipos de ação do gatilho.</span></div></li>
+      <li class="grade-item"><span class="grade-num">05</span><div><strong>Tipos de Munição</strong><br><span style="font-size:.92rem;color:var(--gray);">As partes do cartucho e os tipos de projétil mais comuns.</span></div></li>
+      <li class="grade-item"><span class="grade-num">06</span><div><strong>Conduta na Pista de Tiro</strong><br><span style="font-size:.92rem;color:var(--gray);">Comandos do instrutor, EPIs e como se comportar na pista.</span></div></li>
+      <li class="grade-item"><span class="grade-num">07</span><div><strong>🎯 Bases e Posições de Tiro</strong><br><span style="font-size:.92rem;color:var(--gray);">Posições Isósceles e Weaver — como se posicionar para atirar.</span></div></li>
       <li class="grade-item"><span class="grade-num">08</span><div><strong>🎯 Empunhadura (Pegada)</strong><br><span style="font-size:.92rem;color:var(--gray);">Como segurar a pistola corretamente com as duas mãos.</span></div></li>
-      <li class="grade-item"><span class="grade-num">14</span><div><strong>🎯 Visada (Pontaria)</strong><br><span style="font-size:.92rem;color:var(--gray);">Alinhamento de mira, hierarquia de foco e olho dominante.</span></div></li>
+      <li class="grade-item"><span class="grade-num">09</span><div><strong>🎯 Visada (Pontaria)</strong><br><span style="font-size:.92rem;color:var(--gray);">Alinhamento de mira, hierarquia de foco e olho dominante.</span></div></li>
       <li class="grade-item"><span class="grade-num">10</span><div><strong>🎯 Respiração</strong><br><span style="font-size:.92rem;color:var(--gray);">Técnica de respiração para estabilidade no momento do disparo.</span></div></li>
       <li class="grade-item"><span class="grade-num">11</span><div><strong>🎯 Acionamento do Gatilho</strong><br><span style="font-size:.92rem;color:var(--gray);">O fundamento mais importante: como acionar sem desviar o tiro.</span></div></li>
-      <li class="grade-item"><span class="grade-num">12</span><div><strong>🎯 Controle do Recuo e Acompanhamento</strong><br><span style="font-size:.92rem;color:var(--gray);">Como absorver o recuo e manter a visada após o disparo (follow-through).</span></div></li>
+      <li class="grade-item"><span class="grade-num">12</span><div><strong>🎯 Controle do Recuo e Acompanhamento</strong><br><span style="font-size:.92rem;color:var(--gray);">Como absorver o recuo e manter a visada após o disparo.</span></div></li>
       <li class="grade-item"><span class="grade-num">13</span><div><strong>Panes e Incidentes de Tiro</strong><br><span style="font-size:.92rem;color:var(--gray);">Como identificar e resolver: nega, chaminé, dupla alimentação e falha de extração.</span></div></li>
-      <li class="grade-item"><span class="grade-num">14</span><div><strong>Disparos Práticos em Alvo</strong><br><span style="font-size:.92rem;color:var(--gray);">50 tiros de 9mm + 5 tiros de cortesia no cal.12 (espingarda). Total: 55 disparos.</span></div></li>
+      <li class="grade-item"><span class="grade-num">14</span><div><strong>Disparos Práticos em Alvo</strong><br><span style="font-size:.92rem;color:var(--gray);">50 disparos de pistola para aplicar todos os fundamentos na prática.</span></div></li>
       <li class="grade-item"><span class="grade-num">15</span><div><strong>Correção de Agrupamento de Tiro</strong><br><span style="font-size:.92rem;color:var(--gray);">Análise do alvo para identificar e corrigir erros de técnica.</span></div></li>
-    </ul>
-  </div>
+    </ul>  </div>
 </section>
 
 <!-- ══════ INCLUSO ══════ -->
@@ -293,7 +294,8 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
     <div class="inc-card">
       <h4>Material Incluso</h4>
       <ul class="inc-list">
-        <li>50 munições 9mm + 5 cortesia cal.12</li>
+        <li>50 disparos de pistola inclusos</li>
+        <li>🎁 Brinde surpresa exclusivo no dia do curso</li>
         <li>Alvos para prática</li>
         <li>EPIs durante toda a aula (abafador e óculos)</li>
         <li>Material didático digital (enviado no ato da compra)</li>
@@ -350,9 +352,15 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
     </div>
     <div class="inst-card">
       <div class="inst-av">🎯</div>
-      <div class="inst-name">Flávio Barreto</div>
+      <div class="inst-name">Flávio Barretto</div>
       <div class="inst-role">IAT · Instrutor de Armamento e Tiro</div>
       <a href="https://www.instagram.com/barrettoflavio/" target="_blank">📸 @barrettoflavio</a>
+    </div>
+    <div class="inst-card">
+      <div class="inst-av">🎯</div>
+      <div class="inst-name">Judson Almeida</div>
+      <div class="inst-role">IAT · Instrutor de Armamento e Tiro</div>
+      <a href="https://instagram.com/judsonskull51" target="_blank">📸 @judsonskull51</a>
     </div>
   </div>
   <p class="txt" style="text-align:center;font-size:1rem;margin-top:4px;">Formados pela <strong>Combat Tático</strong> — Escola de Formação credenciada pela Polícia Federal</p>
@@ -381,19 +389,19 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
       Oferta expira em: <span id="timerDisplay">03:00:00</span>
     </div>
 
-    <div class="price-old"><span>De R$ 997,00</span></div>
+    <div class="price-old"><span>De R$ 1.397,00</span></div>
     <div class="price-label">Valor Promocional</div>
-    <div class="price-new"><small>R$</small> 397</div>
-    <div class="price-save">💰 60% DE DESCONTO</div>
+    <div class="price-new"><small>R$</small> 697</div>
+    <div class="price-save">💰 50% DE DESCONTO</div>
 
   <div class="price-cta">
-    <a href="https://wa.me/5561999435583?text=Olá%20Ricardo!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20Operador%20de%20Pistola%20Básico%20pelo%20valor%20promocional%20de%20R%24397." class="btn-cta" target="_blank" style="font-size:1.1rem;padding:18px 24px;">
+    <a href="https://wa.me/5561999435583?text=Olá%20Ricardo!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20Operador%20de%20Pistola%20Básico%20pelo%20valor%20promocional%20de%20R%24697." class="btn-cta" target="_blank" style="font-size:1.1rem;padding:18px 24px;">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Ricardo — R$ 397
+      Ricardo — R$ 697
     </a>
-    <a href="https://wa.me/5561993749508?text=Olá%20Flávio!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20Operador%20de%20Pistola%20Básico%20pelo%20valor%20promocional%20de%20R%24397." class="btn-cta" target="_blank" style="margin-top:10px;font-size:1.1rem;padding:18px 24px;">
+    <a href="https://wa.me/5561993749508?text=Olá%20Flávio!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20Operador%20de%20Pistola%20Básico%20pelo%20valor%20promocional%20de%20R%24697." class="btn-cta" target="_blank" style="margin-top:10px;font-size:1.1rem;padding:18px 24px;">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Flávio — R$ 397
+      Flávio — R$ 697
     </a>
     <p style="font-size:.72rem;color:var(--gray);margin-top:10px;">Vagas limitadas por turma · Pix, Crédito ou Débito</p>
   </div>
@@ -406,18 +414,12 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
   <p class="s-label">Próximas Turmas</p>
   <h2 class="s-title">Escolha sua Data</h2>
   <div class="sep"></div>
-  <p class="txt">Turmas com <strong>no máximo 6 alunos</strong> para garantir acompanhamento individual de cada participante. As vagas se esgotam rápido — garanta a sua.</p>
-  <div class="turma-grid">
-    <div class="turma-card">
-      <div class="tc-day">14</div>
-      <div class="tc-month">Junho 2026</div>
-      <div class="tc-weekday">Domingo</div>
-      <div class="tc-vagas">⚡ Últimas vagas</div>
-    </div>
-    <div class="turma-card">
-      <div class="tc-day">21</div>
-      <div class="tc-month">Junho 2026</div>
-      <div class="tc-weekday">Domingo</div>
+  <p class="txt">Turma com <strong>vagas limitadas</strong> para garantir acompanhamento individual de cada participante. As vagas se esgotam rápido — garanta a sua.</p>
+  <div class="turma-grid" style="grid-template-columns:1fr;max-width:340px;margin:0 auto;">
+    <div class="turma-card" style="border-color:var(--gold);">
+      <div class="tc-day">26</div>
+      <div class="tc-month">Julho 2026</div>
+      <div class="tc-weekday">Domingo · 09h</div>
       <div class="tc-vagas">⚡ Últimas vagas</div>
     </div>
   </div>
@@ -453,7 +455,7 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
   <div class="sep"></div>
   <div class="seg-box">
     <h4>🩺 APH Tático — Atendimento Pré-Hospitalar</h4>
-    <p>Os instrutores <strong>Ricardo Taira</strong> e <strong>Flávio Barreto</strong> possuem formação em <strong>APH Tático</strong> (Atendimento Pré-Hospitalar Tático), com equipamentos de socorro disponíveis no local. O Clube de Tiro Matsumoto (CTM) também conta com estrutura de primeiros socorros. Toda a atividade é supervisionada do início ao fim com rigor total em segurança.</p>
+    <p>Os instrutores <strong>Ricardo Taira</strong>, <strong>Flávio Barretto</strong> e <strong>Judson Almeida</strong> possuem formação em <strong>APH Tático</strong> (Atendimento Pré-Hospitalar Tático), com equipamentos de socorro disponíveis no local. O Clube de Tiro Matsumoto (CTM) também conta com estrutura de primeiros socorros. Toda a atividade é supervisionada do início ao fim com rigor total em segurança.</p>
   </div>
   <p class="txt" style="text-align:center;font-size:.82rem;">Em mais de <strong>centenas de alunos formados</strong>, nenhum incidente registrado. Segurança é a nossa prioridade número 1.</p>
 </section>
@@ -491,12 +493,12 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
 
   <div class="faq-item" onclick="this.classList.toggle('open')">
     <div class="faq-q">O curso é seguro? <span>▼</span></div>
-    <div class="faq-a"><strong>100% seguro.</strong> Toda a atividade é supervisionada diretamente pelos instrutores, que possuem formação em APH Tático e equipamentos de socorro no local. O Clube de Tiro Matsumoto também possui estrutura de primeiros socorros. Turmas de no máximo 6 alunos garantem atenção individual.</div>
+    <div class="faq-a"><strong>100% seguro.</strong> Toda a atividade é supervisionada diretamente pelos instrutores, que possuem formação em APH Tático e equipamentos de socorro no local. O Clube de Tiro Matsumoto também possui estrutura de primeiros socorros. Turmas de no vagas limitadas garantem atenção individual.</div>
   </div>
 
   <div class="faq-item" onclick="this.classList.toggle('open')">
     <div class="faq-q">O recuo da arma dói? <span>▼</span></div>
-    <div class="faq-a"><strong>Não.</strong> Com a empunhadura e postura corretas (que você vai aprender no curso), o recuo é totalmente controlável e não causa dor. O 9mm tem recuo controlável quando você aplica a técnica correta de empunhadura e postura. O instrutor acompanha cada disparo para garantir que você está confortável.</div>
+    <div class="faq-a"><strong>Não.</strong> Com a empunhadura e postura corretas (que você vai aprender no curso), o recuo é totalmente controlável e não causa dor. O instrutor acompanha cada disparo para garantir que você está confortável.</div>
   </div>
 
   <div class="faq-item" onclick="this.classList.toggle('open')">
@@ -535,8 +537,8 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
     Oferta expira em: <span id="timerDisplay2">03:00:00</span>
   </div>
 
-  <p class="fc-sub">Turmas de <strong>no máximo 6 alunos</strong>. Próximas datas: <strong>14 e 21 de junho</strong>. As vagas se esgotam rápido — fale com um dos instrutores agora pelo WhatsApp.</p>
-  <div class="fc-price"><small>por apenas</small> R$ 397 <small style="position:relative;color:var(--gray);">R$ 997<span style="position:absolute;left:-2px;right:-2px;top:52%;height:1px;background:var(--gray);"></span></small></div>
+  <p class="fc-sub">Turma com <strong>vagas limitadas</strong>. Data: <strong>26 de julho de 2026 (domingo), às 09h</strong>. As vagas se esgotam rápido — fale com um dos instrutores agora pelo WhatsApp.</p>
+  <div class="fc-price"><small>por apenas</small> R$ 697 <small style="position:relative;color:var(--gray);">R$ 1.397<span style="position:absolute;left:-2px;right:-2px;top:52%;height:1px;background:var(--gray);"></span></small></div>
   <div style="max-width:380px;margin:0 auto;">
     <a href="https://wa.me/5561999435583?text=Olá%20Ricardo!%20Quero%20garantir%20minha%20vaga%20no%20Curso%20Operador%20de%20Pistola%20Básico!" class="btn-cta" target="_blank" style="font-size:1.1rem;padding:18px 24px;">
       <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -552,21 +554,33 @@ section{padding:48px 20px;border-top:1px solid var(--line);}
 
 <!-- ══════ FOOTER ══════ -->
 <footer class="footer">
-  <div class="footer-sub" style="margin-bottom:10px;letter-spacing:.18em;font-size:.68rem;">INSTRUTORES</div>
+  <div class="footer-sub" style="margin-bottom:16px;letter-spacing:.2em;font-size:1.05rem;">INSTRUTORES</div>
 
-  <div class="footer-logo">RICARDO TAIRA</div>
-  <div class="footer-sub">Instrutor de Armamento e Tiro — IAT</div>
-  <a href="https://instagram.com/ricardo_taira" target="_blank" class="footer-ig" style="display:inline-flex;margin-bottom:14px;">📸 @ricardo_taira</a>
+  <div style="background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-bottom:12px;text-align:center;">
+    <div class="footer-logo">RICARDO TAIRA</div>
+    <div class="footer-sub" style="margin-bottom:6px;">Instrutor de Armamento e Tiro — IAT</div>
+    <a href="https://instagram.com/ricardo_taira" target="_blank" class="footer-ig">📸 @ricardo_taira</a>
+  </div>
 
-  <div style="width:40px;height:1px;background:var(--line);margin:0 auto 14px;"></div>
+  <div style="width:50px;height:1px;background:var(--line);margin:0 auto 12px;"></div>
 
-  <div class="footer-logo">FLÁVIO BARRETO</div>
-  <div class="footer-sub">Instrutor de Armamento e Tiro — IAT</div>
-  <a href="https://www.instagram.com/barrettoflavio/" target="_blank" class="footer-ig" style="display:inline-flex;margin-bottom:14px;">📸 @barrettoflavio</a>
+  <div style="background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-bottom:12px;text-align:center;">
+    <div class="footer-logo">FLÁVIO BARRETTO</div>
+    <div class="footer-sub" style="margin-bottom:6px;">Instrutor de Armamento e Tiro — IAT</div>
+    <a href="https://www.instagram.com/barrettoflavio/" target="_blank" class="footer-ig">📸 @barrettoflavio</a>
+  </div>
 
-  <div style="width:40px;height:1px;background:var(--line);margin:0 auto 14px;"></div>
+  <div style="width:50px;height:1px;background:var(--line);margin:0 auto 12px;"></div>
 
-  <div class="footer-sub">Formados pela Combat Tático — Escola de Formação credenciada pela Polícia Federal</div>
+  <div style="background:var(--bg3);border:1px solid var(--line);border-radius:var(--r);padding:20px;margin-bottom:16px;text-align:center;">
+    <div class="footer-logo">JUDSON ALMEIDA</div>
+    <div class="footer-sub" style="margin-bottom:6px;">Instrutor de Armamento e Tiro — IAT</div>
+    <a href="https://instagram.com/judsonskull51" target="_blank" class="footer-ig">📸 @judsonskull51</a>
+  </div>
+
+  <div style="width:50px;height:1px;background:var(--line);margin:0 auto 16px;"></div>
+
+  <div class="footer-sub" style="line-height:1.5;">Formados pela Combat Tático<br>Escola de Formação credenciada pela Polícia Federal</div>
   <div class="footer-copy">© 2026 Ricardo Taira · Todos os direitos reservados</div>
 </footer>
 
